@@ -1,0 +1,22 @@
+{
+  "name": "EDITH-MD",
+  "description": "Javascript WhatsApp bot powered by Bandaheali",
+  "logo": "https://i.ibb.co/8L2PmKPC/edith-md.jpg",
+  "keywords": ["EDITH-MD", "WhatsApp Bot", "Bandaheali"],
+  "success_url": "/",
+  "stack": "heroku-24",
+
+  "env": {
+    "DATABASE_URL": {
+      "description": "PostgreSQL / Supabase database connection URL",
+      "required": true,
+      "value": ""
+    }
+  },
+
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ]
+}
